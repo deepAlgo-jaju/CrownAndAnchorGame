@@ -13,7 +13,6 @@ public class Game {
 		dice.add(die3);
 		values = new ArrayList<DiceValue>();
 	}
-
 	public List<DiceValue> getDiceValues() {
 		values.clear();
 		for (Dice d : dice) {
