@@ -3,7 +3,6 @@ public class Player {
 	private String name;
 	private int balance;
 	private int limit;
-	
 	public Player(String name, int balance) {
 		if (name == null || name .isEmpty()) throw new IllegalArgumentException("Name cannot be null or empty");
 		if (balance < 0) throw new IllegalArgumentException("Balance cannot be negative");
