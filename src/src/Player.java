@@ -16,6 +16,7 @@ public class Player {
 	public String getName() { return name; }
 
 	public int getBalance() { return balance; }
+
 	public int getLimit() { return limit; }
 
 	public void setLimit(int limit) {
