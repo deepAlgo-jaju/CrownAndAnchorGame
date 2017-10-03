@@ -36,7 +36,6 @@ public class Main {
                 System.out.println(String.format("Start Game %d: ", i));
                 System.out.println(String.format("%s starts with balance %d, limit %d", 
                 		player.getName(), player.getBalance(), player.getLimit()));
-
                 int turn = 0;
                 while (player.balanceExceedsLimitBy(bet) && player.getBalance() < 200)
                 {
