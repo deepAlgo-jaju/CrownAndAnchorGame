@@ -5,7 +5,6 @@ import java.io.*;
 public class Main {
 	
 	public static void main(String[] args) throws Exception {
-		
 	   BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 
         Dice d1 = new Dice();
