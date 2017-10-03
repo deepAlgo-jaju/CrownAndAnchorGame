@@ -12,6 +12,7 @@ public class Player {
 		this.balance = balance;
 		this.limit = 0;
 	}
+
 	public String getName() { return name; }
 	public int getBalance() { return balance; }
 	public int getLimit() { return limit; }
