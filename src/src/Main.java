@@ -14,7 +14,6 @@ public class Main {
         List<DiceValue> cdv = game.getDiceValues();
         int totalWins = 0;
         int totalLosses = 0;
-
         while (true)
         {
             int winCount = 0;
