@@ -37,6 +37,7 @@ public class Player {
 		if (!balanceExceedsLimitBy(bet)) throw new IllegalArgumentException("Placing bet would go below limit.");
 		balance = balance - bet;
 	}
+
 	public void receiveWinnings(int winnings) {
 		System.out.println("Current balance after betting is : ----> "+balance);
 		if (winnings < 0) throw new IllegalArgumentException("Winnings cannot be negative.");
