@@ -1,28 +1,23 @@
 import java.util.List;
 import java.io.*;
 
+//Starting assignment 4 in branch Junaid
 public class Main {
 	
 	public static void main(String[] args) throws Exception {
-		
 	   BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
-
         Dice d1 = new Dice();
         Dice d2 = new Dice();
         Dice d3 = new Dice();
-
         Player player = new Player("Fred", 100);
         Game game = new Game(d1, d2, d3);
         List<DiceValue> cdv = game.getDiceValues();
-
         int totalWins = 0;
         int totalLosses = 0;
-
         while (true)
         {
             int winCount = 0;
             int loseCount = 0;
-            
             for (int i = 0; i < 100; i++)
             {
             	String name = "Fred";
@@ -31,11 +26,9 @@ public class Main {
                 player = new Player(name, balance);
                 player.setLimit(limit);
                 int bet = 5;
-
                 System.out.println(String.format("Start Game %d: ", i));
                 System.out.println(String.format("%s starts with balance %d, limit %d", 
                 		player.getName(), player.getBalance(), player.getLimit()));
-
                 int turn = 0;
                 while (player.balanceExceedsLimitBy(bet) && player.getBalance() < 200)
                 {
