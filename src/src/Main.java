@@ -12,7 +12,6 @@ public class Main {
         Player player = new Player("Fred", 100);
         Game game = new Game(d1, d2, d3);
         List<DiceValue> cdv = game.getDiceValues();
-
         int totalWins = 0;
         int totalLosses = 0;
 
