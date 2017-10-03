@@ -18,3 +18,4 @@ public class Dice {
 		return value.toString();
 	}
 }
+// test comment
