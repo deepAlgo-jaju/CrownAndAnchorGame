@@ -1,7 +1,7 @@
 public class Dice {
 			
 	private DiceValue value;
-	
+	//constructor
 	public Dice() {
 		value =  DiceValue.getRandom();
 	}
