@@ -8,7 +8,6 @@ public class Main {
 	    BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 	    Dice d1 = new Dice();
 	    Dice d2 = new Dice();
-
 	    Dice d3 = new Dice();
 
         Player player = new Player("Fred", 100);
