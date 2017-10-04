@@ -10,7 +10,8 @@ public class Main {
 	    Dice d1 = new Dice();
 
 	    Dice d2 = new Dice();
-        Dice d3 = new Dice();
+
+	    Dice d3 = new Dice();
 
         Player player = new Player("Fred", 100);
 
