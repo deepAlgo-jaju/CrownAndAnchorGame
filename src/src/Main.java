@@ -17,6 +17,7 @@ public class Main {
         int totalWins = 0;
 
         int totalLosses = 0;
+
         while (true)
         {
             int winCount = 0;
