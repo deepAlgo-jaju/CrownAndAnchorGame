@@ -19,7 +19,7 @@ public class Main {
         System.out.println("To play the game user age must be 18+");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter you age: ");
-        int
+        int age
         while (true)
         {
             int winCount = 0;
