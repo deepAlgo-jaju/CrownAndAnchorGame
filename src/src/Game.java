@@ -14,7 +14,7 @@ public class Game {
 			dice.add(die1);
 			dice.add(die2);
 			dice.add(die3);
-			values = new ArrayList<DiceValue>();
+		values = new ArrayList<DiceValue>();
 	}
 
 	public List<DiceValue> getDiceValues() {
