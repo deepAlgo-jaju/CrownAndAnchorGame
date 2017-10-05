@@ -13,6 +13,7 @@ public class Dice {
 	public DiceValue roll() {
 		return DiceValue.getRandom();
 	}
+
 	public String toString() {
 		return value.toString();
 	}
