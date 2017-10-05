@@ -15,7 +15,7 @@ public class Main {
         int totalWins = 0;
         int totalLosses = 0;
         //Asking age from the user
-        System.out.println("Enter you age:");
+        System.out.println("To play the game user age must be 18+");
         System.out.println("Enter you age: ");
         while (true)
         {
