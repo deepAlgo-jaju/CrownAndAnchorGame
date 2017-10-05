@@ -11,7 +11,7 @@ public class Game {
 
 			if (die1 == null || die2 == null || die3 == null) throw new IllegalArgumentException("Dice cannot be null.");
 			dice = new ArrayList<Dice>();
-			dice.add(die1);
+		dice.add(die1);
 		dice.add(die2);
 		dice.add(die3);
 		values = new ArrayList<DiceValue>();
