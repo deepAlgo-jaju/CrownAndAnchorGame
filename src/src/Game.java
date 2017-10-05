@@ -8,7 +8,6 @@ public class Game {
 	private List<DiceValue> values;
 
 	public Game(Dice die1, Dice die2, Dice die3) {
-
 		if (die1 == null || die2 == null || die3 == null) throw new IllegalArgumentException("Dice cannot be null.");
 		dice = new ArrayList<Dice>();
 		dice.add(die1);
