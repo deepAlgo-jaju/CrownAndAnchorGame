@@ -32,10 +32,13 @@ public class Main {
                 int turn = 0;
                 while (player.balanceExceedsLimitBy(bet) && player.getBalance() < 200)
                 {
+
                     cdv = game.getDiceValues();
                     turn++;                    
                 	DiceValue pick = DiceValue.getRandom();
-                   
+
+                	System.out.println("Mimimum wage is $5");
+                    System.out.println("Mimimum wage is $200");
                 	System.out.printf("Turn %d: %s bet %d on %s\n",
                 			turn, player.getName(), bet, pick); 
                 	
