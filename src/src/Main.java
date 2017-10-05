@@ -1,5 +1,6 @@
 import java.util.List;
 import java.io.*;
+import java.util.Scanner;
 
 //Starting assignment 4 in branch Junaid
 public class Main {
@@ -14,6 +15,14 @@ public class Main {
         List<DiceValue> cdv;
         int totalWins = 0;
         int totalLosses = 0;
+        //Asking age from the user
+        System.out.println("To play the game user age must be 18+");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter you age: ");
+        int age = scanner.nextInt();
+        if(age < 18){
+            System.exit(0);
+        }
         while (true)
         {
             int winCount = 0;
