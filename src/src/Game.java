@@ -22,7 +22,7 @@ public class Game {
 			for (Dice d : dice) {
 				values.add(d.roll());
 			}
-			return Collections.unmodifiableList(values);
+		return Collections.unmodifiableList(values);
 	}
 
 	public int playRound(Player player, DiceValue pick, int bet ) {
