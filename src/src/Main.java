@@ -14,6 +14,8 @@ public class Main {
         List<DiceValue> cdv;
         int totalWins = 0;
         int totalLosses = 0;
+        //Asking age from the user
+
         while (true)
         {
             int winCount = 0;
