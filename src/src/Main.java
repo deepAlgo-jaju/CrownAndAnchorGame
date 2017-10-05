@@ -5,13 +5,13 @@ import java.io.*;
 public class Main {
 	
 	public static void main(String[] args) throws Exception {
-	   BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
-        Dice d1 = new Dice();
-        Dice d2 = new Dice();
-        Dice d3 = new Dice();
+	    BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
+	    Dice d1 = new Dice();
+	    Dice d2 = new Dice();
+	    Dice d3 = new Dice();
         Player player = new Player("Fred", 100);
         Game game = new Game(d1, d2, d3);
-        List<DiceValue> cdv = game.getDiceValues();
+        List<DiceValue> cdv;
         int totalWins = 0;
         int totalLosses = 0;
         while (true)
@@ -32,6 +32,7 @@ public class Main {
                 int turn = 0;
                 while (player.balanceExceedsLimitBy(bet) && player.getBalance() < 200)
                 {
+                    cdv = game.getDiceValues();
                     turn++;                    
                 	DiceValue pick = DiceValue.getRandom();
                    
