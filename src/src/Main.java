@@ -22,7 +22,6 @@ public class Main {
             {
 
                 String name = "Fred";
-
                 int balance = 100;
                 int limit = 0;
                 player = new Player(name, balance);
