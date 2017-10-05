@@ -15,7 +15,7 @@ public class Main {
         int totalWins = 0;
         int totalLosses = 0;
         //Asking age from the user
-
+        System.out.println("Enter you age: ");
         while (true)
         {
             int winCount = 0;
