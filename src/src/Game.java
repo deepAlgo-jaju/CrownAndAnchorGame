@@ -18,7 +18,7 @@ public class Game {
 	}
 
 	public List<DiceValue> getDiceValues() {
-			values.clear();
+		values.clear();
 			for (Dice d : dice) {
 				values.add(d.roll());
 			}
