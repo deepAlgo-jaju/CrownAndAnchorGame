@@ -21,7 +21,7 @@ public class Main {
         System.out.println("Enter you age: ");
         int age = scanner.nextInt();
         if(age < 18){
-            System
+            System.exit();
         }
         while (true)
         {
