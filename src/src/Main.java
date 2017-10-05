@@ -20,7 +20,9 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter you age: ");
         int age = scanner.nextInt();
-        if(age < 18)
+        if(age < 18){
+
+        }
         while (true)
         {
             int winCount = 0;
