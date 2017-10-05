@@ -20,7 +20,6 @@ public class Main {
             int loseCount = 0;
             for (int i = 1; i < 100; i++)
             {
-
                 String name = "Fred";
                 int balance = 100;
                 int limit = 0;
