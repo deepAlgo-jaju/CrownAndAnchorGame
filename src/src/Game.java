@@ -27,6 +27,7 @@ public class Game {
 		if (player == null) throw new IllegalArgumentException("Player cannot be null.");
 
 		if (pick == null) throw new IllegalArgumentException("Pick cannot be negative.");
+
 		if (bet < 0) throw new IllegalArgumentException("Bet cannot be negative.");
 		player.takeBet(bet);
 		int matches = 0;
