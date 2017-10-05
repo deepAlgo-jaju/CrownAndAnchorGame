@@ -33,7 +33,6 @@ public class Game {
 		player.takeBet(bet);
 
 		int matches = 0;
-
 		for ( Dice d : dice) {
 			d.roll();
 			if (d.getValue().equals(pick)) { 
