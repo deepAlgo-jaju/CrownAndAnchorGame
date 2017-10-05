@@ -34,7 +34,6 @@ public class Game {
 				matches += 1;
 			}
 		}
-
 		int winnings = matches * bet;
 		if (matches > 0) {
 			player.receiveWinnings(winnings);
