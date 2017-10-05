@@ -1,5 +1,6 @@
 import java.util.List;
 import java.io.*;
+import java.util.Scanner;
 
 //Starting assignment 4 in branch Junaid
 public class Main {
@@ -16,7 +17,7 @@ public class Main {
         int totalLosses = 0;
         //Asking age from the user
         System.out.println("To play the game user age must be 18+");
-        Scanner
+        Scanner scanner
         System.out.println("Enter you age: ");
         while (true)
         {
