@@ -1,4 +1,5 @@
 public class Dice {
+
 	private DiceValue value;
 	public Dice() {
 		value =  DiceValue.getRandom();
