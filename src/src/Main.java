@@ -26,6 +26,7 @@ public class Main {
                 int balance = 100;
 
                 int limit = 0;
+
                 player = new Player(name, balance);
                 player.setLimit(limit);
                 int bet = 5;
