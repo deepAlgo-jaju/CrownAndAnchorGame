@@ -13,7 +13,7 @@ public class Game {
 			dice = new ArrayList<Dice>();
 			dice.add(die1);
 			dice.add(die2);
-		dice.add(die3);
+			dice.add(die3);
 		values = new ArrayList<DiceValue>();
 	}
 
