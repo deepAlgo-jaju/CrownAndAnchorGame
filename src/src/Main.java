@@ -102,6 +102,7 @@ public class Main {
                     cdv.get(i).toString().equals("Spade")){
 	            success = true;
             }
+            else
             if(success)
         }
 	    return true;
