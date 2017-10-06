@@ -72,7 +72,7 @@ public class Main {
                             loseCount++;
                         }
                     }else {
-
+                        System.out.println("Roled over as No Spin/Throw all wagers shall be void on that spin/throw");
                     }
                     
                 } //while
