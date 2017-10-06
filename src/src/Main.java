@@ -92,7 +92,7 @@ public class Main {
 	}
 
     private static boolean checkNoSpinThrow(List<DiceValue> cdv) {
-	    boolean
+	    boolean success
 	    for (int i = 0; i <cdv.size(); i++){
 	        if(cdv.get(i).toString().equals("Anchor") ||
                     cdv.get(i).toString().equals("Crown") ||
