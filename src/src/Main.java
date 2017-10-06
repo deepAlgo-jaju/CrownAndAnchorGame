@@ -96,7 +96,7 @@ public class Main {
 	        if(cdv.get(i).toString().equals("Anchor") ||
                     cdv.get(i).toString().equals("Crown") ||
                     cdv.get(i).toString().equals("Heart") ||
-                    cdv.get(i).toString().equals()){
+                    cdv.get(i).toString().equals("Diamond")){
 	            return true;
             }
 
