@@ -71,6 +71,8 @@ public class Main {
                                     player.getName(), player.getBalance());
                             loseCount++;
                         }
+                    }else {
+
                     }
                     
                 } //while
