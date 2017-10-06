@@ -99,7 +99,7 @@ public class Main {
                     cdv.get(i).toString().equals("Diamond") ||
                     cdv.get(i).toString().equals("Club") ||
                     cdv.get(i).toString().equals("Spade")){
-	            success ;
+	            success = true;
             }
 
         }
