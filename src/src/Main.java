@@ -19,10 +19,13 @@ public class Main {
         System.out.println("To play the game user age must be 18+");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter you age: ");
-        int age = scanner.nextInt();
+        int age;
+        age = 19;
         if(age < 18){
+            System.out.println("Your age is less then 18 you are not allowed to play the game ");
             System.exit(0);
         }
+        System.out.println("Your age is 18+ you can play the game");
         while (true)
         {
             int winCount = 0;
@@ -43,29 +46,31 @@ public class Main {
                 {
 
                     cdv = game.getDiceValues();
-                    turn++;                    
-                	DiceValue pick = DiceValue.getRandom();
+                    if(checkNoSpinThrow(cdv)){
+                        turn++;
+                        DiceValue pick = DiceValue.getRandom();
 
-                	System.out.println("Mimimum wage is $5");
-                    System.out.println("Mimimum wage is $200");
-                	System.out.printf("Turn %d: %s bet %d on %s\n",
-                			turn, player.getName(), bet, pick); 
-                	
-                	int winnings = game.playRound(player, pick, bet);
-                    cdv = game.getDiceValues();
-                    
-                    System.out.printf("Rolled %s, %s, %s\n",
-                    		cdv.get(0), cdv.get(1), cdv.get(2));
-                    
-                    if (winnings > 0) {
-	                    System.out.printf("%s won %d, balance now %d\n\n",
-	                    		player.getName(), winnings, player.getBalance());
-	                	winCount++; 
-                    }
-                    else {
-	                    System.out.printf("%s lost, balance now %d\n\n",
-	                    		player.getName(), player.getBalance());
-	                	loseCount++;
+                        System.out.println("Mimimum wage is $5");
+                        System.out.println("Mimimum wage is $200");
+                        System.out.printf("Turn %d: %s bet %d on %s\n",
+                                turn, player.getName(), bet, pick);
+
+                        int winnings = game.playRound(player, pick, bet);
+                        cdv = game.getDiceValues();
+
+                        System.out.printf("Rolled %s, %s, %s\n",
+                                cdv.get(0), cdv.get(1), cdv.get(2));
+
+                        if (winnings > 0) {
+                            System.out.printf("%s won %d, balance now %d\n\n",
+                                    player.getName(), winnings, player.getBalance());
+                            winCount++;
+                        }
+                        else {
+                            System.out.printf("%s lost, balance now %d\n\n",
+                                    player.getName(), player.getBalance());
+                            loseCount++;
+                        }
                     }
                     
                 } //while
@@ -85,5 +90,14 @@ public class Main {
         
         System.out.println(String.format("Overall win rate = %.1f%%", (float)(totalWins * 100) / (totalWins + totalLosses)));
 	}
+
+    private static boolean checkNoSpinThrow(List<DiceValue> cdv) {
+	    for (int i = 0; i <cdv.size(); i++){
+	        if(cdv.get(i).toString().equals("Anchor")){
+	            return true;
+            }
+        }
+	    return true;
+    }
 
 }
