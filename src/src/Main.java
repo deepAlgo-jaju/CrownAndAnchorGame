@@ -95,7 +95,7 @@ public class Main {
 	    for (int i = 0; i <cdv.size(); i++){
 	        if(cdv.get(i).toString().equals("Anchor") ||
                     cdv.get(i).toString().equals("Crown") ||
-                    cdv.get(i).toString().equals("Heart")){
+                    cdv.get(i).toString().equals("Heart") ){
 	            return true;
             }
 
