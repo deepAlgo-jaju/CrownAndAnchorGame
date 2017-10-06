@@ -105,7 +105,6 @@ public class Main {
             else success = false;
             if(!success) {
                 return false;
-                break;
             }
         }
 	    return true;
