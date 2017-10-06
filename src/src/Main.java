@@ -98,7 +98,7 @@ public class Main {
                     cdv.get(i).toString().equals("Heart") ||
                     cdv.get(i).toString().equals("Diamond") ||
                     cdv.get(i).toString().equals("Club") ||
-                    cdv.get(i)){
+                    cdv.get(i).toString()){
 	            return true;
             }
 
