@@ -103,7 +103,7 @@ public class Main {
 	            success = true;
             }
             else success = false;
-            if(!success)
+            if(!success) break;
         }
 	    return true;
     }
