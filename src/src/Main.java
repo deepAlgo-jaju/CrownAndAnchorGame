@@ -94,7 +94,8 @@ public class Main {
     private static boolean checkNoSpinThrow(List<DiceValue> cdv) {
 	    for (int i = 0; i <cdv.size(); i++){
 	        if(cdv.get(i).toString().equals("Anchor") ||
-                    cdv.get(i).toString().equals("Crown")){
+                    cdv.get(i).toString().equals("Crown")
+                    cdv){
 	            return true;
             }
 
