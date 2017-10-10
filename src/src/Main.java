@@ -41,6 +41,7 @@ public class Main {
                 {
                     turn++;                    
                 	DiceValue pick = DiceValue.getRandom();
+					//bug 1 soloution
                    System.out.println("minimum value of wage is $5");
 				   System.out.println("maximum value of wage is $200");
                 	System.out.printf("Turn %d: %s bet %d on %s\n",
