@@ -2,7 +2,7 @@ import java.util.List;
 import java.io.*;
 import java.util.Scanner;
 
-//Starting assignment 4 in branch Junaid
+//Starting assignment 4 in branch Awais
 public class Main {
 	
 	public static void main(String[] args) throws Exception {
