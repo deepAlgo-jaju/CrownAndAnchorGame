@@ -16,6 +16,9 @@ public class Main {
         int totalWins = 0;
         int totalLosses = 0;
         //Asking age from the user
+		
+		// bug 02 fixation 
+		// asking user to enter your age 
         System.out.println("To play the game user age must be 18+");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter you age: ");
