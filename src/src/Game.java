@@ -20,7 +20,7 @@ public class Game {
 	public List<DiceValue> getDiceValues() {
 		values.clear();
 		for (Dice d : dice) {
-			values.add(d.getValue());
+			values.add(d.roll());
 		}
 		return Collections.unmodifiableList(values);
 	}	
