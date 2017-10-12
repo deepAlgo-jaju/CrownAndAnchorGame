@@ -98,6 +98,9 @@ public class Main {
             String ans = console.readLine();
             if (ans.equals("q")) break;
         } //while true
+		
+		// Issue 06 Fixation 
+		
         
         System.out.println(String.format("Overall win rate = %.1f%%", (float)(totalWins * 100) / (totalWins + totalLosses)));
 	}
