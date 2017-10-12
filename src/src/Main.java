@@ -33,6 +33,8 @@ public class Main {
         {
             int winCount = 0;
             int loseCount = 0;
+			// Issue 03 fixation 
+            // Start game counter starts from 1 
             for (int i = 1; i < 100; i++)
             {
                 String name = "Fred";
