@@ -61,7 +61,10 @@ public class Main {
                         System.out.printf("Turn %d: %s bet %d on %s\n",
                                 turn, player.getName(), bet, pick);
 
-                        int winnings = game.playRound(player, pick, bet);
+                          // Bug 05 fixation 
+						  // random values appears on each turn 
+
+					  int winnings = game.playRound(player, pick, bet);
                         cdv = game.getDiceValues();
 
                         System.out.printf("Rolled %s, %s, %s\n",
