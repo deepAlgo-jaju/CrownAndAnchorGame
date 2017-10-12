@@ -54,7 +54,8 @@ public class Main {
                     if(checkNoSpinThrow(cdv)){
                         turn++;
                         DiceValue pick = DiceValue.getRandom();
-
+                      // Bug 04 fixation 
+					  // minium and max values 
                         System.out.println("Mimimum wage is $5");
                         System.out.println("Mimimum wage is $200");
                         System.out.printf("Turn %d: %s bet %d on %s\n",
