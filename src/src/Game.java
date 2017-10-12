@@ -41,6 +41,7 @@ public class Game {
 			}
 		}
 		
+		//bug3
 		
 		
 		int winnings = matches * bet;
