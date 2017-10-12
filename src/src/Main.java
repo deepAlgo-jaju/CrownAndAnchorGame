@@ -16,6 +16,9 @@ public class Main {
         int totalWins = 0;
         int totalLosses = 0;
         //Asking age from the user
+		
+		// bug 02 fixation 
+		// asking user to enter your age 
         System.out.println("To play the game user age must be 18+");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter you age: ");
@@ -30,6 +33,8 @@ public class Main {
         {
             int winCount = 0;
             int loseCount = 0;
+			// Issue 03 fixation 
+            // Start game counter starts from 1 
             for (int i = 1; i < 100; i++)
             {
                 String name = "Fred";
@@ -49,13 +54,17 @@ public class Main {
                     if(checkNoSpinThrow(cdv)){
                         turn++;
                         DiceValue pick = DiceValue.getRandom();
-
+                      // Bug 04 fixation 
+					  // minium and max values 
                         System.out.println("Mimimum wage is $5");
                         System.out.println("Mimimum wage is $200");
                         System.out.printf("Turn %d: %s bet %d on %s\n",
                                 turn, player.getName(), bet, pick);
 
-                        int winnings = game.playRound(player, pick, bet);
+                          // Bug 05 fixation 
+						  // random values appears on each turn 
+
+					  int winnings = game.playRound(player, pick, bet);
                         cdv = game.getDiceValues();
 
                         System.out.printf("Rolled %s, %s, %s\n",
@@ -76,7 +85,8 @@ public class Main {
                     }
                     
                 } //while
-
+ // issue 08 fixation 
+ // balance update 
                 System.out.print(String.format("%d turns later.\nEnd Game %d: ", turn, i));
                 System.out.println(String.format("%s now has balance %d\n", player.getName(), player.getBalance()));
                 
@@ -89,10 +99,14 @@ public class Main {
             String ans = console.readLine();
             if (ans.equals("q")) break;
         } //while true
+		
+		// Issue 06 Fixation 
+		
         
         System.out.println(String.format("Overall win rate = %.1f%%", (float)(totalWins * 100) / (totalWins + totalLosses)));
 	}
 
+	// Bug 01 fixation roll over with no spin 
     private static boolean checkNoSpinThrow(List<DiceValue> cdv) {
 	    boolean success = false;
 	    for (int i = 0; i <cdv.size(); i++){
