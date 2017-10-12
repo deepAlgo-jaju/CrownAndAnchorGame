@@ -45,8 +45,9 @@ public class Player {
 	
 	public void receiveWinnings(int winnings) {
 		
-		if (winnings < 0) throw new IllegalArgumentException("Winnings cannot be negative");
-		balance = balance + winnings;		
+		System.out.println("Current balance after betting is : ----> "+balance);
+		if (winnings < 0) throw new IllegalArgumentException("Winnings cannot be negative.");
+balance = balance + winnings;		
 	}
 	
 	public String toString() {
