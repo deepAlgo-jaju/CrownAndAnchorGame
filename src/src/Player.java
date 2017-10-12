@@ -12,8 +12,12 @@ public class Player {
 		this.limit = 0;
 	}
 		
-	public String getName() { return name; }
+		
+		
+	public String getName() { return name; 
+	
 	public int getBalance() { return balance; }
+	
 	public int getLimit() { return limit; }
 	
 	public void setLimit(int limit) {
@@ -22,9 +26,12 @@ public class Player {
 		this.limit = limit;
 	}
 
+	
+	
 	public boolean balanceExceedsLimit() {
 		return (balance > limit);
 	}
+	
 	
 	public boolean balanceExceedsLimitBy(int amount) {
 		return (balance - amount > limit);
@@ -37,7 +44,8 @@ public class Player {
 	}
 	
 	public void receiveWinnings(int winnings) {
-		if (winnings < 0) throw new IllegalArgumentException("Winnings cannot be negative.");
+		
+		if (winnings < 0) throw new IllegalArgumentException("Winnings cannot be negative");
 		balance = balance + winnings;		
 	}
 	
