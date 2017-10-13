@@ -13,6 +13,7 @@ public class Game {
 		dice.add(die1);
 		dice.add(die2);
 		dice.add(die3);
+		
 		values = new ArrayList<DiceValue>();
 	}
 	
@@ -30,9 +31,7 @@ public class Game {
 		if (player == null) throw new IllegalArgumentException("Player cannot be null.");
 		if (pick == null) throw new IllegalArgumentException("Pick cannot be negative.");
 		if (bet < 0) throw new IllegalArgumentException("Bet cannot be negative.");
-		
-		player.takeBet(bet);
-		    
+		player.takeBet(bet);    
 		int matches = 0;
 		for ( Dice d : dice) {
 			d.roll();
